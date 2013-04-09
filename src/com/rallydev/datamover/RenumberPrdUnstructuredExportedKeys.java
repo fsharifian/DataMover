@@ -49,8 +49,8 @@ public class RenumberPrdUnstructuredExportedKeys {
             m.appendReplacement(sb, Matcher.quoteReplacement(replacement.toString()));
           }
         }
-        System.out.format("original string '%s' was replaced by '%s' \n",string ,sb.toString());
         m.appendTail(sb);
+        System.out.format("original string '%s' was replaced by '%s' \n",string ,sb.toString());
         return sb.toString();
       }
 

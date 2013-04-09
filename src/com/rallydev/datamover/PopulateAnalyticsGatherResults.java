@@ -19,7 +19,8 @@ public class PopulateAnalyticsGatherResults {
     protected AnalyticsGatherResults gatherAnalytics(String schema) throws Exception
       {
         //Connection c = getRenumConn();
-        Connection c = dbconnection.getRenumDBConnection();
+      //  Connection c = dbconnection.getRenumDBConnection();
+        Connection c = dbconnection.getRenumAnalyticsDBConnection();
         DatabaseMetaData meta = c.getMetaData();
         results = new AnalyticsGatherResults(schema);
 
